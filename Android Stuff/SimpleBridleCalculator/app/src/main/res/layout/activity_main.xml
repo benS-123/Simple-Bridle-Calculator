@@ -60,6 +60,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tension2Result"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
@@ -73,6 +74,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.894"
         app:layout_constraintStart_toEndOf="@+id/tension1Result"
@@ -104,13 +106,13 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:ems="10"
-        android:inputType="number"
         android:hint="@string/length_in_metres"
+        android:importantForAutofill="no"
+        android:inputType="number|numberDecimal"
         app:layout_constraintBottom_toTopOf="@+id/rope2TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rope1TextView"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/rope1TextView" />
 
     <EditText
         android:id="@+id/length2Box"
@@ -123,13 +125,13 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:ems="10"
-        android:inputType="number"
         android:hint="@string/length_in_metres"
+        android:importantForAutofill="no"
+        android:inputType="number|numberDecimal"
         app:layout_constraintBottom_toTopOf="@+id/DistanceBetweenBeamsTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rope2TextView"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/rope2TextView" />
 
     <EditText
         android:id="@+id/length3Box"
@@ -142,13 +144,13 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:ems="10"
-        android:inputType="number"
         android:hint="@string/length_in_metres"
+        android:importantForAutofill="no"
+        android:inputType="number|numberDecimal"
         app:layout_constraintBottom_toTopOf="@+id/massText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DistanceBetweenBeamsTextView"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/DistanceBetweenBeamsTextView" />
 
     <TextView
         android:id="@+id/massText"
@@ -175,11 +177,11 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:ems="10"
-        android:inputType="number"
         android:hint="@string/mass_in_kilograms"
+        android:importantForAutofill="no"
+        android:inputType="number|numberDecimal"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/massText"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/massText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
