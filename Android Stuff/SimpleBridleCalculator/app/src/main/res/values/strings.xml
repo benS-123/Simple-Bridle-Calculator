@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Simple Bridle Calculator</string>
+    <string name="mass">Mass</string>
+    <string name="distance_between_beams">Distance Between Beams</string>
+    <string name="length_of_right_rope_rope_2">Length of Right Rope/ Rope 2</string>
+    <string name="length_of_left_rope_rope_1">Length of Left Rope/ Rope 1</string>
+    <string name="calculate">Calculate</string>
+    <string name="length_in_metres">length in metres</string>
+    <string name="mass_in_kilograms">mass in kilograms</string>
 </resources>

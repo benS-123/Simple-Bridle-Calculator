@@ -14,7 +14,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="8dp"
-        android:text="Length of Left Rope/ Rope 1"
+        android:text="@string/length_of_left_rope_rope_1"
         android:textStyle="bold|italic"
         app:fontFamily="sans-serif"
         app:layout_constraintBottom_toTopOf="@+id/length1Box"
@@ -29,7 +29,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Length of Right Rope/ Rope 2"
+        android:text="@string/length_of_right_rope_rope_2"
         android:textStyle="bold|italic"
         app:fontFamily="sans-serif"
         app:layout_constraintBottom_toTopOf="@+id/length2Box"
@@ -44,7 +44,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Distance Between Beams"
+        android:text="@string/distance_between_beams"
         android:textStyle="bold|italic"
         app:fontFamily="sans-serif"
         app:layout_constraintBottom_toTopOf="@+id/length3Box"
@@ -82,9 +82,13 @@
         android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:onClick="buttonClicked"
-        android:text="Calculate"
+        android:text="@string/calculate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/massBox" />
@@ -100,11 +104,13 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number"
+        android:hint="@string/length_in_metres"
         app:layout_constraintBottom_toTopOf="@+id/rope2TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rope1TextView" />
+        app:layout_constraintTop_toBottomOf="@+id/rope1TextView"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/length2Box"
@@ -117,11 +123,13 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number"
+        android:hint="@string/length_in_metres"
         app:layout_constraintBottom_toTopOf="@+id/DistanceBetweenBeamsTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rope2TextView" />
+        app:layout_constraintTop_toBottomOf="@+id/rope2TextView"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/length3Box"
@@ -134,11 +142,13 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number"
+        android:hint="@string/length_in_metres"
         app:layout_constraintBottom_toTopOf="@+id/massText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DistanceBetweenBeamsTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/DistanceBetweenBeamsTextView"
+        android:importantForAutofill="no" />
 
     <TextView
         android:id="@+id/massText"
@@ -147,7 +157,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Mass"
+        android:text="@string/mass"
         android:textStyle="bold|italic"
         app:fontFamily="sans-serif"
         app:layout_constraintBottom_toTopOf="@+id/massBox"
@@ -165,9 +175,11 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number"
+        android:hint="@string/mass_in_kilograms"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/massText" />
+        app:layout_constraintTop_toBottomOf="@+id/massText"
+        android:importantForAutofill="no" />
 </androidx.constraintlayout.widget.ConstraintLayout>
