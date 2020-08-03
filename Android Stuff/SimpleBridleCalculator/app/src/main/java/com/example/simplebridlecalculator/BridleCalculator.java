@@ -19,7 +19,7 @@ public class BridleCalculator {
      * @param length3   Length between beams
      * @param mass      Mass of the load/object
      */
-    public BridleCalculator(double length1, double length2, double length3, double mass){
+    BridleCalculator(double length1, double length2, double length3, double mass){
         this.length1 = length1;
         this.length2 = length2;
         this.length3 = length3;
@@ -32,7 +32,7 @@ public class BridleCalculator {
      * Applies heron's formula to get area. Then use area of triangle, A= (1/2)bh, to solve for height.
      * Use height in trig ratios to finally determine angles. Solve for tension.
      */
-    public void calcTension(){
+    void calcTension(){
         double semiPerimeter = (length1 + length2 + length3) / 2.0;
         double area = Math.sqrt(semiPerimeter * (semiPerimeter - length1) * (semiPerimeter - length2) * (semiPerimeter - length3));
         double height = area * 2.0 / length3;
@@ -46,7 +46,7 @@ public class BridleCalculator {
      * Returns tension along left rope.
      * @return tension1
      */
-    public double getTension1() {
+    double getTension1() {
         return tension1;
     }
 
@@ -54,7 +54,7 @@ public class BridleCalculator {
      * Returns tension along right rope.
      * @return tension2.
      */
-    public double getTension2() {
+    double getTension2() {
         return tension2;
     }
 
